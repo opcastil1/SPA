@@ -1,0 +1,74 @@
+<html ng-app="ui.bootstrap.demo">
+
+   
+
+  <body>
+<div style="height: 20px;"></div>
+<div class='center-block' style="width: 1000px;">
+
+<div class='row'>
+
+
+<div class="col-md-4" ng-controller="DatepickerDemoCtrl">
+ <div class="col-lg-4">
+            <p class="input-group" style="width:300px;">
+              <input id="time" type="date" class="form-control" uib-datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+</div>
+
+</div>
+
+
+ <div class="col-md-3"style="width: 200px;" role="group" aria-label="...">
+
+  <button onclick="linea(0)" type="button" class="btn btn-default">Dia</button>
+
+  <button onclick="linea(1)" class="btn btn-default">Mes</button>
+
+  <button onclick="linea(2)" class="btn btn-default">Año</button>
+
+
+
+</div> 
+
+
+<div class="col-md-3">
+  <button id="dato" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Selecciones información requerida<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li onclick="lineadata(0)"><a  href="#">Energia consumida edificio</a></li>
+    <li onclick="lineadata(1)"><a href="#">Energia generada planta fotovoltáica</a></li>
+    <li onclick="lineadata(2)"><a href="#">Errores</a></li>
+  </ul>
+ </div>
+
+<div class="col-md-2">
+
+<a id="link" onclick="descargar()" class="btn btn-default">Descargar data</a>
+
+</div>
+
+
+</div>
+
+<div style="height: 50px;"></div>
+
+<canvas id="linea" style="" width="1000" height="400"></canvas>
+
+<div style="height: 50px;"></div>
+
+
+
+</body>
+
+<script >
+$('.dropdown-toggle').dropdown();
+inicio();
+
+</script>>
+
+</html>
