@@ -1,0 +1,298 @@
+<html ng-app="ui.bootstrap.demo">
+
+   
+
+  <body >
+
+
+<div class='container' style="width: 1100px; margin-left: 20px; margin-top:0px;">
+
+<!-- Variables a configurar -->
+
+<div class="col-lg-5" style="width: 50px; margin-top:0px; height:50px; float:right;">
+
+<div class="container" style="width:1000px; margin-top:80px; margin-right:100px;"  >
+
+<h3 style="font-weight:bold; margin-left:150px;margin-top:30px;margin-bottom:30px;">
+
+Variables configurables
+
+</h3>
+
+<div class="col-md-4" style="margin-left:100px;">
+
+<h3 style="margin-top:6px;margin-left:20px;">Rotación de vistas</h3>
+
+
+<div class="col-md-2" style="width:200px;">
+
+ <input type="number" class="form-control" id="seg" placeholder="Segundos">
+
+</div>
+
+
+<div class="col-md-2" style="">
+
+<a id="guardarseg" onclick="guardartiempo()" class="btn btn-default">Guardar</a>
+
+</div>
+
+
+
+</div>
+<div class="col-md-4">
+
+<h3 style="margin-top:6px;margin-left:20px;">Factor emisión SIC</h3>
+
+
+<div class="col-md-2" style="width:200px;">
+
+ <input type="number" class="form-control" id="sic" placeholder="">
+
+</div>
+
+
+<div class="col-md-2" style="">
+
+<a id="guardarsic" onclick="guardarsic()" class="btn btn-default">Guardar</a>
+
+</div>
+
+
+
+</div>
+
+
+ 
+
+</div>
+
+<div class="container" style="width:1000px; margin-top:80px; margin-left:100px;" >
+
+<div class="col-md-4">
+
+<h3 style="margin-top:6px;margin-left:20px;">Tarifa eléctrica</h3>
+
+
+<div class="col-md-2" style="width:200px;">
+
+ <input type="number" class="form-control" id="tarifa" placeholder="Costo por kWh">
+
+</div>
+
+
+<div class="col-md-2" style="">
+
+<a id="guardartarifa" onclick="guardartarifa()" class="btn btn-default">Guardar</a>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div style="width: 1000px; margin-left: 20px; margin-top:0px; float:left;">
+
+
+<div class='container' style="width: 1200px; margin-left: 20px; margin-top:50px;">
+
+<!-- Vista 1 -->
+
+<div style="width: 900px; margin-left:30px; " >
+
+<h3 id="vistauno">
+
+</h3>
+
+  
+
+</div>
+
+<div class="col-md-4" ng-controller="DatepickerDemoCtrl">
+ <div class="col-lg-4">
+            <p class="input-group" style="width:300px;">
+              <input id="time1" type="date" class="form-control" uib-datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+</div>
+
+</div>
+
+
+<div class="col-md-3"style="width: 200px;" role="group" aria-label="...">
+
+  <button onclick="tipouno(0)" type="button" class="btn btn-default">Dia</button>
+  <button onclick="tipouno(1)" class="btn btn-default">Mes</button>
+  <button onclick="tipouno(2)" class="btn btn-default">Año</button>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+  <button id="dato1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Selecciones información requerida<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li onclick="datouno(0)"><a  href="#">Energia consumida edificio</a></li>
+    <li onclick="datouno(1)"><a href="#">Energia generada planta fotovoltáica</a></li>
+  </ul>
+
+ </div>
+
+<div class="col-md-2">
+
+<a id="link" onclick="guardaruno()" class="btn btn-default">Guardar</a>
+
+</div>
+
+
+</div>
+
+<!-- Vista 2 -->
+
+<div class='row' style="width: 1200px; margin-left: 20px; margin-top:20px;">
+
+<div style="width: 900px; margin-left:30px; " >
+
+<h3 id="vistados">
+
+</h3>
+
+  
+
+</div>
+
+<div class="col-md-4" ng-controller="DatepickerDemoCtrl">
+ <div class="col-lg-4">
+            <p class="input-group" style="width:300px;">
+              <input id="time2" type="date" class="form-control" uib-datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+</div>
+
+</div>
+
+
+<div class="col-md-3"style="width: 200px;" role="group" aria-label="...">
+
+  <button onclick="tipodos(0)" type="button" class="btn btn-default">Dia</button>
+  <button onclick="tipodos(1)" class="btn btn-default">Mes</button>
+  <button onclick="tipodos(2)" class="btn btn-default">Año</button>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+  <button id="dato2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Selecciones información requerida<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li onclick="datodos(0)"><a  href="#">Energia consumida edificio</a></li>
+    <li onclick="datodos(1)"><a href="#">Energia generada planta fotovoltáica</a></li>
+  </ul>
+
+ </div>
+
+<div class="col-md-2">
+
+<a id="link" onclick="guardardos()" class="btn btn-default">Guardar</a>
+
+</div>
+
+
+</div>
+
+
+<!-- Vista 3 -->
+
+<div class='row' style="width: 1200px; margin-left: 20px; margin-top:20px;">
+
+<div style="width: 900px; margin-left:30px; " >
+
+<h3 id="vistatres">
+
+</h3>
+
+  
+
+</div>
+
+<div class="col-md-4" ng-controller="DatepickerDemoCtrl">
+ <div class="col-lg-4">
+            <p class="input-group" style="width:300px;">
+              <input id="time3" type="date" class="form-control" uib-datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+</div>
+
+</div>
+
+
+<div class="col-md-3"style="width: 200px;" role="group" aria-label="...">
+
+  <button onclick="tipotres(0)" type="button" class="btn btn-default">Dia</button>
+  <button onclick="tipotres(1)" class="btn btn-default">Mes</button>
+  <button onclick="tipotres(2)" class="btn btn-default">Año</button>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+  <button id="dato3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Selecciones información requerida<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li onclick="datotres(0)"><a  href="#">Energia consumida edificio</a></li>
+    <li onclick="datotres(1)"><a href="#">Energia generada planta fotovoltáica</a></li>
+  </ul>
+
+ </div>
+
+<div class="col-md-2">
+
+<a id="link" onclick="guardartres()" class="btn btn-default">Guardar</a>
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+</body>
+
+<script >
+$('.dropdown-toggle').dropdown();
+configuracion();
+
+</script>
+
+</html>

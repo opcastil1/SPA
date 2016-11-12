@@ -1,0 +1,173 @@
+<html ng-app="ui.bootstrap.demo">
+
+<body class="solar" >
+
+<div class="row" style="margin-top:80px;">
+
+<div class="col-lg-6">
+
+<div class="row">
+
+<div class="col-lg-4" style="margin-left: 40px;">
+
+<h1 class="titulo">Consumo del recinto</h1>
+
+<h3 class="fuentes">Consumo actual</h3>
+
+<h1 id="energiaconsumidactualee" style="margin-left:24px;" class="valores">0</h1>
+
+</div>
+
+<div class="col-lg-2" style="margin-left:-50px;">
+
+<img src="<%= asset_path('e.png') %>" style="height:180px;">
+
+
+</div>
+
+<div class="col-lg-2" style="margin-left:130px;">
+
+<img src="<%= asset_path('sem.png') %>" style="height:180px;">
+
+<img id="rojo" src="<%= asset_path('luzr.png') %>" style="height:43px;   position: absolute; left: 26px;top: 13px;">
+<img id="amarillo" src="<%= asset_path('luza.png') %>" style="height:43px;   position: absolute; left: 26px;top: 65px;">
+<img id="verde" src="<%= asset_path('luzv.png') %>" style="height:43px;   position: absolute; left: 26px;top: 120px;">
+
+
+</div>
+
+<h3 id="textos" class="fuentes" style="font-size:35px;"></h3>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-12" style="margin-left: 20px;">
+
+<div class="row" style="margin-left:10px;">
+
+
+<div class="col-lg-4" >
+<h3 class="fuentes">Energía consumida hoy día </h3>
+
+</div>
+<div class="col-lg-4">
+<h3 class="fuentes">Energía consumida este mes</h3>
+
+
+</div>
+
+
+<div class="col-lg-4" style="width: 200px;">
+<h3 class="fuentes">Energía total consumida</h3>
+
+</div>
+
+
+</div>
+
+<div class="row" style="margin-left:30px; ">
+
+
+<div  class="col-lg-4" >
+<h1 id="energiaconsumidahoyee" class="valores">0</h1>
+
+
+</div>
+<div class="col-lg-4">
+<h1 id="energiaconsumidaesteañoee" class="valores">0</h1>
+
+
+</div>
+
+
+<div class="col-lg-4" style="width: 200px;">
+<h1 id="energiatotalconsumidaee" class="valores">0</h1>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-12" style="margin-top:30px;">
+
+<div class="row" style="margin-left:40px;">
+
+<div class="col-lg-4" style="height: 300px; background:url(/assets/thu.png); background-repeat: no-repeat;background-size: 200px 300px;">
+
+<h3 class="cuadrado">Gasto de dinero </h3>
+
+<h1 id="gastoee" class="valorcuadrado">0</h1>
+
+<img src="<%= asset_path('money.png') %>" style="margin-top:20px; margin-left:30px; height:100px; width: 120px;">
+
+</div>
+
+
+
+
+<div class="col-lg-4" style="height: 300px; background:url(/assets/thu.png); background-repeat: no-repeat;background-size: 200px 300px;">
+
+<h3 class="cuadrado">CO2 Emitido </h3>
+
+<h1 id="co2ee" class="valorcuadrado">0</h1>
+
+<img src="<%= asset_path('co2.png') %>" style="margin-top:20px; margin-left:30px; height:100px; width: 120px;">
+
+</div>
+
+
+<div class="col-lg-4" style="height: 300px; background:url(/assets/thu.png); background-repeat: no-repeat;background-size: 200px 300px;">
+
+<h4 class="cuadrado">Árboles talados </h4>
+
+<h1 id="arbolee" class="valorcuadrado">0</h1>
+
+<img src="<%= asset_path('ar.png') %>" style="margin-top:-18px; margin-left:30px; height:150px; width: 120px;">
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+<!-- 
+Grafico, falta programar para que se comparen los dos consumos -->
+
+<div class="col-lg-5" style="margin-left: 10px; margin-top:0px; width:900px;">
+
+<h1 id="titulografico3" style="width:900px; margin-left:80px;" class="titulo2">
+Consumo del recinto durante 2016
+</h1>
+<h1 style="font-size:40px; font-weight:900; position: absolute; left: -40px; top: 210px;
+-webkit-transform: rotate(-90deg);"> kWh </h1>
+<canvas  id="linea" style="" width="850" height="680"></canvas>
+<h1 id="tiempoti" style="font-size:40px; font-weight:900; position: absolute; left: 400px; top: 740px;"> Tiempo </h1>
+</div>
+
+
+
+</div>
+
+
+  </body>
+
+<script>
+
+$('.dropdown-toggle').dropdown();
+inicio();
+grafico3();
+actualizardatos3();
+semaforo();
+
+</script>
+
+</html>

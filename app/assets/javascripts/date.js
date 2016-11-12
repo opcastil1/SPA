@@ -17,7 +17,7 @@ angular.module('ui.bootstrap.demo').controller('DatepickerDemoCtrl', function ($
   };
 
   $scope.toggleMin = function() {
-    $scope.minDate = $scope.minDate ? null : new Date();
+    //$scope.minDate = $scope.minDate ? null : new Date();
   };
   $scope.toggleMin();
   $scope.maxDate = new Date(2020, 5, 22);

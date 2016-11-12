@@ -5,8 +5,14 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  get  '/log' =>'welcome#log'
   get  '/data' =>'welcome#data'
-  get  '/real' =>'welcome#real'
+  get  '/1' =>'welcome#1'
+  get  '/2' =>'welcome#2'
+  get  '/3' =>'welcome#3'
+  get  '/configuracion' =>'welcome#configuracion'
+
+
   root 'welcome#index'
 
   # Example of regular route:

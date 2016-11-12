@@ -20,11 +20,12 @@ class MyTCPServerHandler(SocketServer.BaseRequestHandler):
         mes = random.randrange(1,12)
         dia = random.randrange(1,31)
         hora = random.randrange(1,24)
-        es = random.randrange(0,56)
-        ee = random.randrange(0,220)
+        es = random.randrange(0,10)
+        pi = random.randrange(0,56)
+        pm = random.randrange(0,56)
+        pmx = random.randrange(0,56)
         error = random.randrange(1,10)
-
-        self.request.sendall(json.dumps({'ano':ano,'mes':mes,'dia':dia,'hora':hora,'es':es,'ee':ee,'error':error}))
+        self.request.sendall(json.dumps({'ano':ano,'mes':mes,'dia':dia,'hora':hora,'es':es,'pi':pi,'pm':pm,'pmx':pmx,'error':error}))
        
     def ahora(self,valor):
         

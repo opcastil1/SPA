@@ -1,4 +1,6 @@
-conexion = '192.168.0.11:3000/websocket';
+//hacer desplegable para cambiar ocnfiguracion
+
+conexion = '100.1.145.3:3000/websocket';
 
 //DataLinea
 
@@ -11,153 +13,96 @@ descargardatos =[];
 cantidaddatos = 80;
 datareal =0;
 descargardatos2 =[];
-descargardatos3 =[];s
+descargardatos3 =[];
 descargardatos22 = [];
 descargardatos33 = [];
-function inicio2 (){
+tiempovista=350000;
 
 
-var a = new Array(); 
+function vistas(tiempovistas){
 
- for (i = 0; i < cantidaddatos; i++) {
-           
-            var num = i;
-            var n = num.toString();
-            a[i] = "";
-             
-          }
-console.log(a);
-lineaDataReal["labels"] = a;  
+setTimeout(function(){ 
 
-
-var b = new Array(); 
-
- for (i = 0; i < cantidaddatos; i++) {
-           
- 
-            b[i] = 0;
-             
-          }
-console.log(b);
-lineaDataReal["datasets"][0].data = b ; 
+asd=window.location.pathname;
+asd1=asd.split("/");
+if (asd1[1]==="1"){
+url = "http://100.1.145.3:3000/2";
+window.location.href = url;
+}else if(asd1[1]==="2"){
+url = "http://100.1.145.3:3000/3";
+window.location.href = url; 
+}else if(asd1[1]==="3"){
+url = "http://100.1.145.3:3000/1";
+window.location.href = url;
+}
 
 
-var reales = document.getElementById('real').getContext('2d');
-graficoreal = new Chart(reales).Line(lineaDataReal,lineOptionReal);
-
-real(0);
+ }, tiempovistas);
 
 
 
-};
 
 
+}
 
 function inicio (){
 
+message='';
+var dispatcher = new WebSocketRails(conexion);
+dispatcher.trigger('graficos.tiempovista',message);
+dispatcher.bind('graficos.tiempovista', function(task) {
 
-var a = new Array(); 
-
- for (i = 0; i < cantidaddatos; i++) {
-           
-            var num = i;
-            var n = num.toString();
-            a[i] = "";
-             
-          }
-
-lineaDataReal["labels"] = a;  
+ tiempovistas=task*1000;
+ vistas(tiempovistas);
 
 
-var b = new Array(); 
-
- for (i = 0; i < cantidaddatos; i++) {
-           
- 
-            b[i] = 0;
-             
-          }
-
-lineaDataReal["datasets"][0].data = b ; 
-lineaDataReal["datasets"][1].data = b ; 
-
-
+});
 var linea = document.getElementById('linea').getContext('2d');
 graficolinea = new Chart(linea).Line(lineaData,lineOption);
-var reales = document.getElementById('real').getContext('2d');
-graficoreal = new Chart(reales).Line(lineaDataReal,lineOptionReal);
-real();
-
-
-
-
-};
-
-function lineadata (data){
-
-if (data ===0){
-
-document.getElementById('dato').innerHTML='Energia consumida edificio';
-
-return dato = 'ee'
-
-
-}else if(data ===1){
-
-document.getElementById('dato').innerHTML='Energia generada planta fotovoltáica';
-
-return  dato = 'es'
-
-
-
-}else if(data ===2){
-
-document.getElementById('dato').innerHTML='Errores';
-
-return dato = 'error'
-
-
-}
-
 
 
 };
 
 
-function linea (tiempo) {
-
+function grafico1() {
 
 graficolinea.destroy();
-time = document.getElementById('time').value;
-date = time.split("-");
-año = date[0];
-mes = date[1];
-dia = date[2];
-var linea = document.getElementById('linea').getContext('2d');
-message = [dato,tiempo,date[0],date[1],date[2]];
+message='';
 var dispatcher = new WebSocketRails(conexion);
-dispatcher.trigger('graficos.linea',message);
-dispatcher.bind('graficos.data', function(task) {
+dispatcher.trigger('graficos.vista1',message);
+dispatcher.bind('graficos.vista1', function(task) {
 
-descargardatos=task;
+lineaData["datasets"][0].data = task[0] ;
+
+//x axis
+
+if (task[1]=="dia"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"]; 
+}else if(task[1]=="mes"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"]; 
+}else if(task[1]=="año"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12"]; 
+};
 
 
-lineaData["datasets"][0].data = task ;
-
-if (tiempo === 0) {
-	
-	lineaData["labels"] = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"];
-   
-
-}else if (tiempo === 1){
-
-	lineaData["labels"] = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
-    
-}
-
+var linea = document.getElementById('linea').getContext('2d');
 graficolinea = new Chart(linea).Line(lineaData,lineOption);
 
 
+});
+
+dispatcher.bind('graficos.titulo1', function(task) {
+
+
+
+
+
+titulo = task[0]+" "+task[1];
+//para colocar el titulo añomesdia
+//+" "+task[2]+"-"+task[3]+"-"+task[4]
+
+document.getElementById('titulografico1').innerHTML=titulo;
+document.getElementById('tiempoti').innerHTML=task[1];
 
 
 });
@@ -167,117 +112,88 @@ graficolinea = new Chart(linea).Line(lineaData,lineOption);
 };
 
 
-//TiempoReal
+function grafico2() {
+
+graficolinea.destroy();
+message='';
+var dispatcher = new WebSocketRails(conexion);
+dispatcher.trigger('graficos.vista2',message);
+dispatcher.bind('graficos.vista2', function(task) {
+
+descargardatos=task;
+lineaData["datasets"][0].data = task[0] ;
 
 
-function real (dato) {
+//x axis
 
-
-real1= setTimeout(function () {
-
-        var dispatcher = new WebSocketRails(conexion);
-        message = dato;
-		dispatcher.trigger('graficos.real',message);
-		dispatcher.bind('graficos.datareal', function(task) {
-        var nuevo = cantidaddatos-1;
-        for (i = 0; i < nuevo; i++) {
-           
-            var a = 1 + i;
-
-            graficoreal.datasets[0].points[i].value = graficoreal.datasets[0].points[a].value ;
-            
-
-          };
-      
-        graficoreal.datasets[0].points[nuevo].value = task[dato];
-       
-        datarealvoltaje = task[0];
-        datarealamperaje = task[1];
-
-		graficoreal.update();	
-
-});     dispatcher.close;
-        real(dato);
-    }, 1000);
-
-
+if (task[1]=="dia"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"]; 
+}else if(task[1]=="mes"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"]; 
+}else if(task[1]=="año"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12"]; 
 };
 
-function iniciarguardar(){
+
+var linea = document.getElementById('linea').getContext('2d');
+graficolinea = new Chart(linea).Line(lineaData,lineOption);
 
 
+});
 
-document.getElementById("iniciarreal").disabled = true;
-document.getElementById("dato").disabled = true;
-document.getElementById("link").disabled = true;
+dispatcher.bind('graficos.titulo2', function(task) {
+titulo = task[0]+" "+task[1];
+//para colocar el titulo añomesdia
+//+" "+task[2]+"-"+task[3]+"-"+task[4]
 
- time = setTimeout(function () {
-       
-       var h = 0;
-       h =  descargardatos2.length ;
-       descargardatos2[h] = datarealvoltaje;
-       descargardatos3[h] = datarealamperaje;
-       var x=document.getElementById("notificacion");
-       var time = h;
-       var minutes = Math.floor(time / 60);
-       var seconds = time - minutes * 60;
-       var hours = Math.floor(time / 3600);
-       time = time - hours * 3600;
-       function str_pad_left(string,pad,length) {
-      return (new Array(length+1).join(pad)+string).slice(-length);
-       }
-      var finalTime = str_pad_left(minutes,'0',2)+':'+str_pad_left(seconds,'0',2);
-       x.innerHTML = finalTime;
-       iniciarguardar();
-  
+document.getElementById('titulografico2').innerHTML=titulo;
 
 
-    }, 1000);
-
-
-
-};
-
-function detenerguardar(){
-    
-    document.getElementById("iniciarreal").disabled = false;
-    document.getElementById("dato").disabled = false;
-    clearTimeout(time);
-    console.log(descargardatos2);
-    descargardatos22 = descargardatos2;
-    descargardatos33 = descargardatos3;
-    descargardatos2 = [];
-    descargardatos3 = [];
+});
      
 
-      
 
 };
 
-function realdata (data){
+function grafico3() {
 
-var nuevo = cantidaddatos-1;
-        for (i = 0; i < nuevo; i++) {
-           
-            var a = 1 + i;
-            graficoreal.datasets[0].points[i].value = 0 ;
-             
-          };
+graficolinea.destroy();
+message='';
+var dispatcher = new WebSocketRails(conexion);
+dispatcher.trigger('graficos.vista3',message);
+dispatcher.bind('graficos.vista3', function(task) {
 
-if (data ===0){
+descargardatos=task;
 
-document.getElementById('dato').innerHTML='Voltaje Tiempo Real';
-clearTimeout(real1);
-datoreal="Voltaje";
-real(0);
+lineaData["datasets"][0].data = task[0] ;
 
-}else if(data ===1){
 
-document.getElementById('dato').innerHTML='Corriente Tiempo Real';
-clearTimeout(real1);
-datoreal="Corriente";
-real(1);
+if (task[1]=="dia"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"]; 
+}else if(task[1]=="mes"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"]; 
+}else if(task[1]=="año"){
+lineaData["labels"] = ["0","1","2","3","4","5","6","7","8","9","10","11","12"]; 
+};
 
-}
+
+var linea = document.getElementById('linea').getContext('2d');
+graficolinea = new Chart(linea).Line(lineaData,lineOption);
+
+
+});
+
+dispatcher.bind('graficos.titulo3', function(task) {
+titulo = task[0]+" "+task[1]
+//para colocar el titulo añomesdia
+//+" "+task[2]+"-"+task[3]+"-"+task[4]
+
+;
+document.getElementById('titulografico3').innerHTML=titulo;
+
+
+});
+     
+
 
 };

@@ -1,0 +1,38 @@
+{
+ "general": {
+        "titulo": "Sample Konfabulator Widget",
+        "tipo": "main_window",
+        "año": 500,
+        "mes": 500,
+        "dia": 500,
+        "factora": 500,
+        "factorb": 500
+    },
+    "vista1": {
+        "titulo": "Sample Konfabulator Widget",
+        "tipo": "main_window",
+        "año": 500,
+        "mes": 500,
+        "dia": 500,
+        "factora": 500,
+        "factorb": 500
+    },
+   "vista2": {
+        "titulo": "Sample Konfabulator Widget",
+        "tipo": "main_window",
+        "año": 500,
+        "mes": 500,
+        "dia": 500,
+        "factora": 500,
+        "factorb": 500
+    },
+    "vista3": {
+        "titulo": "Sample Konfabulator Widget",
+        "tipo": "main_window",
+        "año": 500,
+        "mes": 500,
+        "dia": 500,
+        "factora": 500,
+        "factorb": 500
+    }
+}

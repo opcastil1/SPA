@@ -4,9 +4,8 @@
 
   <body>
 <div style="height: 20px;"></div>
-<div class='center-block' style="width: 1000px;">
 
-<div class='row'>
+<div class='row' style="width: 100%; margin-left: 20px;">
 
 
 <div class="col-md-4" ng-controller="DatepickerDemoCtrl">
@@ -55,11 +54,42 @@
 
 </div>
 
-<div style="height: 50px;"></div>
-
-<canvas id="linea" style="" width="1000" height="400"></canvas>
+<div class="row" style="width: 100%; height: 500px;">
 
 <div style="height: 50px;"></div>
+
+<div class="row" style="width: 100%; margin-left:40px;">
+
+<div class="col-md-7">
+
+<canvas id="linea" style="" width="700" height="300"></canvas>
+
+</div>
+
+<div class="col-md-5">
+
+<h4 class="propiole">Energía diaria inyectada a la red : 80kW/H</h4>
+<h4 class="propiole">Energía anual inyectada a la red : 90MW/H</h4>
+<h4 class="propiole"> Potencia activa inyectada a la red : 50kW</h4>
+
+<div style="height: 50px;"></div>
+
+<div class="row">
+
+<canvas id="pie" style="" width="150" height="120"></canvas>
+
+<canvas id="pie2" style="" width="150" height="120"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="height: 50px;"></div>
+
+
+</div>
 
 
 
@@ -69,6 +99,6 @@
 $('.dropdown-toggle').dropdown();
 inicio();
 
-</script>>
+</script>
 
 </html>

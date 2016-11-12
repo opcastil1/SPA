@@ -4,6 +4,7 @@
 //= require Chart.min
 //= require graficos/graficos
 //= require graficos/data
+//= require graficos/configurar
 //= require websocket_rails/main
 //= require ui-bootstrap-tpls-0.14.3.min
 //= require date
@@ -13,3 +14,7 @@
 //= require a
 //= require b
 //= require c
+//= require datos/datos
+//= require datos/configuracion
+//= require datos/descargadatos
+//= require semaforo/semaforo

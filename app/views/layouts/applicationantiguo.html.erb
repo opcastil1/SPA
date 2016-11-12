@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MUNICIPALIDAD DE PROVIDENCIA</title>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "bootstrap" %>
+   <%= stylesheet_link_tag "propio" %>
+    <%= stylesheet_link_tag "a" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top navbar-inverse" style="background-color: #336600;">
+  <div class="text-center h5" style="color: white;height:32px; line-height: 32px;" >
+MUNICIPALIDAD DE PROVIDENCIA-ENERGIA
+</a>
+</div>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>

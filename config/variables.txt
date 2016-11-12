@@ -1,0 +1,12 @@
+ #a = energia generada año inversor
+ #b = energia generada dia inversor
+ #c = ahorro dinero
+ #d = ahorro co2
+ #e = arboles plantados
+ #f = energia consumida año edificio
+ #h = energia consumida dia edificio
+ #i = energia consumida mes edificio
+ #j = gasto dinero
+ #k = emision co2
+ #l = arboles talado
+ #m = energia inyectada   
