@@ -181,18 +181,16 @@ if energiamedidor < energiainversor
 
 inyeccion = (energiainversor - energiamedidor)
 
-page.m = page.m + inyeccion
 
 else
 
-	page.m = page.m
 
 end
 
 puts page.m
  
 
- page.save
+page.save
  
 
  	

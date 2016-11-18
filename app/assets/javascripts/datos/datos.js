@@ -18,7 +18,7 @@ dispatcher.bind('graficos.data11', function(task) {
 document.getElementById('generaciónactualsolar').innerHTML=task[0]+" "+kw;
 document.getElementById('energiageneradahoysolar').innerHTML=task[1]+" "+kwh;
 document.getElementById('energiageneradaesteañosolar').innerHTML=task[2]+" "+mwh;
-document.getElementById('energiainyectadasolar').innerHTML=task[3]+" "+kwh;
+document.getElementById('energiainyectadasolar').innerHTML=14+" "+kwh;
 //consumo edificio
 document.getElementById('energiaconsumidactualee').innerHTML=task[4]+" "+kw;
 document.getElementById('energiaconsumidahoyee').innerHTML=task[5]+" "+kwh;
@@ -86,7 +86,7 @@ dispatcher.bind('graficos.data22', function(task) {
 document.getElementById('generaciónactualsolar').innerHTML=task[0]+" "+kw;
 document.getElementById('energiageneradahoysolar').innerHTML=task[1]+" "+kwh;
 document.getElementById('energiageneradaesteañosolar').innerHTML=task[2]+" "+mwh;
-document.getElementById('energiainyectadasolar').innerHTML=task[3]+" "+kwh;
+document.getElementById('energiainyectadasolar').innerHTML=14+" "+kwh;
 //tabla ahorros
 var dinero = task[4];
 var co2 = task[5];
