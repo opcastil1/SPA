@@ -2,7 +2,7 @@ class GraficosController < WebsocketRails::BaseController
 
 require 'socket'
 require 'json'
-
+require 'date'
 
 #Metodo que leer el archivo configuración donde se guarda la fecha que se va a mostrar en el gráfico y envia la solicitudad al script DB.
 
@@ -14,9 +14,9 @@ def vista1 ()
         titulo = data_hash['vista1']['titulo']
         tipo = data_hash['vista1']['dato']
         periodo = data_hash['vista1']['tipo']
-        año = data_hash['vista1']['año']
-        mes = data_hash['vista1']['mes']
-        dia = data_hash['vista1']['dia']
+        año = Date.today.strftime("%Y")
+        mes = Date.today.strftime("%m")
+        dia = Date.today.strftime("%d")
         db = basededatos(tipo,periodo,año,mes,dia)
         todo = [db,periodo]
         send_message :vista1,todo,:namespace => :graficos
@@ -34,9 +34,9 @@ def vista2 ()
         titulo = data_hash['vista2']['titulo']
         tipo = data_hash['vista2']['dato']
         periodo = data_hash['vista2']['tipo']
-        año = data_hash['vista2']['año']
-        mes = data_hash['vista2']['mes']
-        dia = data_hash['vista2']['dia']
+        año = Date.today.strftime("%Y")
+        mes = Date.today.strftime("%m")
+        dia = Date.today.strftime("%d")
         db = basededatos(tipo,periodo,año,mes,dia)
         todo = [db,periodo]
         send_message :vista2, todo, :namespace => :graficos
@@ -54,9 +54,9 @@ def vista3 ()
         titulo = data_hash['vista3']['titulo']
         tipo = data_hash['vista3']['dato']
         periodo = data_hash['vista3']['tipo']
-        año = data_hash['vista3']['año']
-        mes = data_hash['vista3']['mes']
-        dia = data_hash['vista3']['dia']
+        año = Date.today.strftime("%Y")
+        mes = Date.today.strftime("%m")
+        dia = Date.today.strftime("%d")
         db = basededatos(tipo,periodo,año,mes,dia)
         todo = [db,periodo]
         send_message :vista3, todo, :namespace => :graficos

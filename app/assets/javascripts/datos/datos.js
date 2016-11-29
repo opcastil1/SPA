@@ -50,7 +50,7 @@ if (co2 > 999999) {
 }
 else{
 
-document.getElementById('co2solar').innerHTML=co2+" Ton";
+document.getElementById('co2solar').innerHTML=co2+" TON";
 
 };
 
@@ -61,7 +61,7 @@ if (ar > 999999) {
 }
 else{
 
-document.getElementById('arbolsolar').innerHTML=ar+" Und";
+document.getElementById('arbolsolar').innerHTML=ar+" unidades";
 
 };
 
@@ -112,7 +112,7 @@ if (co2 > 999999) {
 }
 else{
 
-document.getElementById('co2solar').innerHTML=co2+" Ton";
+document.getElementById('co2solar').innerHTML=co2+" TON";
 
 };
 
@@ -123,7 +123,7 @@ if (ar > 999999) {
 }
 else{
 
-document.getElementById('arbolsolar').innerHTML=ar+" Und";
+document.getElementById('arbolsolar').innerHTML=ar+" unidades";
 
 };
 
@@ -177,7 +177,7 @@ if (co2 > 999999) {
 }
 else{
 
-document.getElementById('co2ee').innerHTML=co2+" Ton";
+document.getElementById('co2ee').innerHTML=co2+" TON";
 
 };
 
@@ -188,7 +188,7 @@ if (ar > 999999) {
 }
 else{
 
-document.getElementById('arbolee').innerHTML=ar+" Und";
+document.getElementById('arbolee').innerHTML=ar+" unidades";
 
 };
 });     
