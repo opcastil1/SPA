@@ -1,6 +1,6 @@
 //hacer desplegable para cambiar ocnfiguracion
 
-conexion = '100.1.145.3:3000/websocket';
+conexion = 'localhost:3000/websocket';
 
 //DataLinea
 

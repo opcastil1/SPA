@@ -88,11 +88,11 @@ configuracion();
 function datouno (data){
 
 if (data ===0){
-document.getElementById('dato1').innerHTML='Energia consumida edificio';
-return dato1 = 'ee',titulo1='Energia consumida edificio'
+document.getElementById('dato1').innerHTML='Litros consumidos edificio';
+return dato1 = 'ee',titulo1='Litros consumidos edificio'
 }else if(data ===1){
-document.getElementById('dato1').innerHTML='Energia generada planta fotovoltáica';
-return  dato1 = 'es',titulo1='Energia generada planta fotovoltáica'
+document.getElementById('dato1').innerHTML='Energia generada planta solar';
+return  dato1 = 'es',titulo1='Energia generada planta solar'
 }else if(data ===2){
 document.getElementById('dato1').innerHTML='Errores';
 return dato1 = 'error',titulo1='Errores'
@@ -145,11 +145,11 @@ configuracion();
 function datodos (data){
 
 if (data ===0){
-document.getElementById('dato2').innerHTML='Energia consumida edificio';
-return dato2 = 'ee',titulo2='Energia consumida edificio'
+document.getElementById('dato2').innerHTML='Litros consumidos edificio';
+return dato2 = 'ee',titulo2='Litros consumidos edificio'
 }else if(data ===1){
-document.getElementById('dato2').innerHTML='Energia generada planta fotovoltáica';
-return  dato2 = 'es',titulo2='Energia generada planta fotovoltáica'
+document.getElementById('dato2').innerHTML='Energia generada planta solar';
+return  dato2 = 'es',titulo2='Energia generada planta solar'
 }else if(data ===2){
 document.getElementById('dato2').innerHTML='Errores';
 return dato2 = 'error',titulo2='Errores'
@@ -202,11 +202,11 @@ configuracion();
 function datotres (data){
 
 if (data ===0){
-document.getElementById('dato3').innerHTML='Energia consumida edificio';
-return dato3 = 'ee',titulo3='Energia consumida edificio'
+document.getElementById('dato3').innerHTML='Litros consumidos edificio';
+return dato3 = 'ee',titulo3='Litros consumidos edificio'
 }else if(data ===1){
-document.getElementById('dato3').innerHTML='Energia generada planta fotovoltáica';
-return  dato3 = 'es',titulo3='Energia generada planta fotovoltáica'
+document.getElementById('dato3').innerHTML='Energia generada planta solar';
+return  dato3 = 'es',titulo3='Energia generada planta solar'
 }else if(data ===2){
 document.getElementById('dato3').innerHTML='Errores';
 return dato3 = 'error',titulo3='Errores'
@@ -355,10 +355,10 @@ descargadatos1(length,datodes,añodes,mesdes,diades);
 function datodescarga (data){
 
 if (data ===0){
-document.getElementById('datodes').innerHTML='Energia consumida edificio';
+document.getElementById('datodes').innerHTML='Litros consumidos edificio';
 return datodes = 'ee'
 }else if(data ===1){
-document.getElementById('datodes').innerHTML='Energia generada planta fotovoltáica';
+document.getElementById('datodes').innerHTML='Energia generada planta solar';
 return  datodes = 'es'
 }else if(data ===2){
 document.getElementById('datodes').innerHTML='Errores';
