@@ -1,7 +1,8 @@
 kwh = 'kWh'
 kw = 'kW'
 mwh = 'MWh'
-
+l = "L"
+lh="l/h"
 
 function actualizardatos1(){
 
@@ -20,10 +21,10 @@ document.getElementById('energiageneradahoysolar').innerHTML=task[1]+" "+kwh;
 document.getElementById('energiageneradaesteañosolar').innerHTML=task[2]+" "+mwh;
 document.getElementById('energiainyectadasolar').innerHTML=14+" "+kwh;
 //consumo edificio
-document.getElementById('energiaconsumidactualee').innerHTML=task[4]+" "+kw;
-document.getElementById('energiaconsumidahoyee').innerHTML=task[5]+" "+kwh;
-document.getElementById('energiaconsumidaesteañoee').innerHTML=task[6]+" "+mwh;
-document.getElementById('energiatotalconsumidaee').innerHTML=task[7]+" "+mwh;
+document.getElementById('energiaconsumidactualee').innerHTML=task[4]+" "+l;
+document.getElementById('energiaconsumidahoyee').innerHTML=task[5]+" "+lh;
+document.getElementById('energiaconsumidaesteañoee').innerHTML=task[6]+" "+lh;
+document.getElementById('energiatotalconsumidaee').innerHTML=task[7]+" "+lh;
 
 
 var dinero = task[8];
@@ -149,10 +150,10 @@ dispatcher.bind('graficos.data33', function(task) {
 console.log(task);
 
 //consumo edificio
-document.getElementById('energiaconsumidactualee').innerHTML=task[0]+" "+kw;
-document.getElementById('energiaconsumidahoyee').innerHTML=task[1]+" "+kwh;
-document.getElementById('energiaconsumidaesteañoee').innerHTML=task[2]+" "+mwh;
-document.getElementById('energiatotalconsumidaee').innerHTML=task[3]+" "+mwh;
+document.getElementById('energiaconsumidactualee').innerHTML=task[0]+" "+l;
+document.getElementById('energiaconsumidahoyee').innerHTML=task[1]+" "+lh;
+document.getElementById('energiaconsumidaesteañoee').innerHTML=task[2]+" "+lh;
+document.getElementById('energiatotalconsumidaee').innerHTML=task[3]+" "+lh;
 var dinero = task[4];
 var co2 = task[5];
 var ar = task[6];

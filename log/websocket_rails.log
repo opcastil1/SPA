@@ -3469,3 +3469,235 @@ I [2016-11-30 00:38:54.565] [[32mDispatcher[0m] Event graficos.datos2 Finished
 I [2016-11-30 00:40:24.484] [[32mConnectionManager[0m] Connection closed: #<Connection::b029164bfb9c3293d74e>
 I [2016-11-30 00:40:24.484] [[32mConnectionManager[0m] Connection closed: #<Connection::746c257f7ee28923c830>
 I [2016-11-30 00:40:24.485] [[32mConnectionManager[0m] Connection closed: #<Connection::1e8ed52cbc49810c7e8b>
+I [2016-11-30 00:55:34.167] [[32mConnectionManager[0m] Connection opened: #<Connection::75a121eaff6f8e573e62>
+I [2016-11-30 00:55:34.184] [[32mConnectionManager[0m] Connection opened: #<Connection::eabf4e283a3a82301934>
+I [2016-11-30 00:55:34.185] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-11-30 00:55:34.185] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-11-30 00:55:34.185] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-11-30 00:55:34.185] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::75a121eaff6f8e573e62>
+I [2016-11-30 00:55:34.186] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.000947793 seconds
+I [2016-11-30 00:55:34.188] [[32mConnectionManager[0m] Connection opened: #<Connection::bc5e07205f08f79e5af9>
+I [2016-11-30 00:55:34.189] [[32mDispatcher[0m] Started Event: graficos.vista2
+I [2016-11-30 00:55:34.189] [[32mDispatcher[0m] [36mName:[0m graficos.vista2
+I [2016-11-30 00:55:34.189] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-11-30 00:55:34.189] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::eabf4e283a3a82301934>
+I [2016-11-30 00:55:34.275] [[32mDispatcher[0m] Event graficos.vista2 Finished in 0.085747423 seconds
+I [2016-11-30 00:55:34.299] [[32mDispatcher[0m] Started Event: graficos.datos2
+I [2016-11-30 00:55:34.299] [[32mDispatcher[0m] [36mName:[0m graficos.datos2
+I [2016-11-30 00:55:34.299] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::bc5e07205f08f79e5af9>
+I [2016-11-30 00:55:34.329] [[32mDispatcher[0m] Event graficos.datos2 Finished in 0.029384317 seconds
+I [2016-11-30 00:55:37.571] [[32mConnectionManager[0m] Connection closed: #<Connection::bc5e07205f08f79e5af9>
+I [2016-11-30 00:55:37.571] [[32mConnectionManager[0m] Connection closed: #<Connection::75a121eaff6f8e573e62>
+I [2016-11-30 00:55:37.572] [[32mConnectionManager[0m] Connection closed: #<Connection::eabf4e283a3a82301934>
+I [2016-11-30 00:55:37.995] [[32mConnectionManager[0m] Connection opened: #<Connection::f0d4f159a396312e4154>
+I [2016-11-30 00:55:38.134] [[32mConnectionManager[0m] Connection opened: #<Connection::0ef804faae74de061b2c>
+I [2016-11-30 00:55:38.144] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-11-30 00:55:38.144] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-11-30 00:55:38.145] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-11-30 00:55:38.145] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::f0d4f159a396312e4154>
+I [2016-11-30 00:55:38.154] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.00082734 seconds
+I [2016-11-30 00:55:38.172] [[32mConnectionManager[0m] Connection opened: #<Connection::fa7e2f4e1d9b3b9d5c1b>
+I [2016-11-30 00:55:38.181] [[32mDispatcher[0m] Started Event: graficos.vista1
+I [2016-11-30 00:55:38.181] [[32mDispatcher[0m] [36mName:[0m graficos.vista1
+I [2016-11-30 00:55:38.181] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-11-30 00:55:38.181] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::0ef804faae74de061b2c>
+I [2016-11-30 00:55:38.976] [[32mDispatcher[0m] Event graficos.vista1 Finished in 0.079432159 seconds
+I [2016-11-30 00:55:38.993] [[32mConnectionManager[0m] Connection opened: #<Connection::033fbf5437635d899b70>
+I [2016-11-30 00:55:38.119] [[32mDispatcher[0m] Started Event: graficos.datos1
+I [2016-11-30 00:55:38.119] [[32mDispatcher[0m] [36mName:[0m graficos.datos1
+I [2016-11-30 00:55:38.119] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::fa7e2f4e1d9b3b9d5c1b>
+I [2016-11-30 00:55:38.136] [[32mDispatcher[0m] Event graficos.datos1 Finished in 0.016167118 seconds
+I [2016-11-30 00:55:38.136] [[32mDispatcher[0m] Started Event: graficos.semaforo
+I [2016-11-30 00:55:38.136] [[32mDispatcher[0m] [36mName:[0m graficos.semaforo
+I [2016-11-30 00:55:38.136] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::033fbf5437635d899b70>
+I [2016-11-30 00:55:38.137] [[32mDispatcher[0m] Event graficos.semaforo Finished in 0.000689034 seconds
+I [2016-11-30 00:55:43.228] [[32mConnectionManager[0m] Connection closed: #<Connection::0ef804faae74de061b2c>
+I [2016-11-30 00:55:43.274] [[32mConnectionManager[0m] Connection closed: #<Connection::f0d4f159a396312e4154>
+I [2016-11-30 00:55:43.275] [[32mConnectionManager[0m] Connection closed: #<Connection::fa7e2f4e1d9b3b9d5c1b>
+I [2016-11-30 00:55:43.275] [[32mConnectionManager[0m] Connection closed: #<Connection::033fbf5437635d899b70>
+I [2016-11-30 00:55:43.883] [[32mConnectionManager[0m] Connection opened: #<Connection::683b638a9ef06a1d0536>
+I [2016-11-30 00:55:43.927] [[32mDispatcher[0m] Started Event: graficos.configuracion
+I [2016-11-30 00:55:43.927] [[32mDispatcher[0m] [36mName:[0m graficos.configuracion
+I [2016-11-30 00:55:43.928] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::683b638a9ef06a1d0536>
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] NoMethodError: undefined method `close' for #<String:0x0055562ed40f60>
+Did you mean?  clone
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/MEGA/MEGAsync/Codigo Nuevo/Plataforma Monitoreo Providencia/SPA/SPA/app/controllers/datos_controller.rb:33:in `configuracion'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/websocket-rails-0.7.0/lib/websocket_rails/base_controller.rb:27:in `process_action'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:84:in `run_callbacks'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:19:in `process_action'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/websocket-rails-0.7.0/lib/websocket_rails/dispatcher.rb:65:in `block (3 levels) in route'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/websocket-rails-0.7.0/lib/websocket_rails/logging.rb:66:in `log_event'
+E [2016-11-30 00:55:43.932] [[31mDispatcher[0m] /home/kai/.rvm/gems/ruby-2.3.0/gems/websocket-rails-0.7.0/lib/websocket_rails/dispatcher.rb:62:in `block (2 levels) in route'
+
+I [2016-11-30 00:55:50.250] [[32mConnectionManager[0m] Connection closed: #<Connection::683b638a9ef06a1d0536>
+I [2016-11-30 00:55:50.714] [[32mConnectionManager[0m] Connection opened: #<Connection::f4e883868f5f281f60a8>
+I [2016-11-30 00:55:50.726] [[32mConnectionManager[0m] Connection opened: #<Connection::4c9f7ddbb9c30e9c7c04>
+I [2016-11-30 00:55:50.727] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-11-30 00:55:50.727] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-11-30 00:55:50.727] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-11-30 00:55:50.727] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::f4e883868f5f281f60a8>
+I [2016-11-30 00:55:50.728] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.0008787 seconds
+I [2016-11-30 00:55:50.730] [[32mConnectionManager[0m] Connection opened: #<Connection::5aa9714272080a525caf>
+I [2016-11-30 00:55:50.731] [[32mDispatcher[0m] Started Event: graficos.vista1
+I [2016-11-30 00:55:50.731] [[32mDispatcher[0m] [36mName:[0m graficos.vista1
+I [2016-11-30 00:55:50.731] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-11-30 00:55:50.731] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::4c9f7ddbb9c30e9c7c04>
+I [2016-11-30 00:55:50.819] [[32mDispatcher[0m] Event graficos.vista1 Finished in 0.087661711 seconds
+I [2016-11-30 00:55:50.821] [[32mConnectionManager[0m] Connection opened: #<Connection::28174d01e170a9368b13>
+I [2016-11-30 00:55:50.841] [[32mDispatcher[0m] Started Event: graficos.datos1
+I [2016-11-30 00:55:50.841] [[32mDispatcher[0m] [36mName:[0m graficos.datos1
+I [2016-11-30 00:55:50.841] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::5aa9714272080a525caf>
+I [2016-11-30 00:55:50.846] [[32mDispatcher[0m] Event graficos.datos1 Finished in 0.004827771 seconds
+I [2016-11-30 00:55:50.847] [[32mDispatcher[0m] Started Event: graficos.semaforo
+I [2016-11-30 00:55:50.847] [[32mDispatcher[0m] [36mName:[0m graficos.semaforo
+I [2016-11-30 00:55:50.847] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::28174d01e170a9368b13>
+I [2016-11-30 00:55:50.848] [[32mDispatcher[0m] Event graficos.semaforo Finished in 0.000619538 seconds
+I [2016-11-30 00:55:54.998] [[32mConnectionManager[0m] Connection closed: #<Connection::f4e883868f5f281f60a8>
+I [2016-11-30 00:55:54.999] [[32mConnectionManager[0m] Connection closed: #<Connection::4c9f7ddbb9c30e9c7c04>
+I [2016-11-30 00:55:54.999] [[32mConnectionManager[0m] Connection closed: #<Connection::28174d01e170a9368b13>
+I [2016-11-30 00:55:55.337] [[32mConnectionManager[0m] Connection closed: #<Connection::5aa9714272080a525caf>
+I [2016-12-02 14:17:36.787] [[32mConnectionManager[0m] Connection opened: #<Connection::16e9878b419a2a066012>
+I [2016-12-02 14:17:36.847] [[32mConnectionManager[0m] Connection opened: #<Connection::5e3a7949bad0080498a9>
+I [2016-12-02 14:17:36.858] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-12-02 14:17:36.858] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-12-02 14:17:36.859] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:17:36.859] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::16e9878b419a2a066012>
+I [2016-12-02 14:17:36.860] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.00113369 seconds
+I [2016-12-02 14:17:36.875] [[32mConnectionManager[0m] Connection opened: #<Connection::d6a18ab13f209b9ac619>
+I [2016-12-02 14:17:36.887] [[32mDispatcher[0m] Started Event: graficos.vista1
+I [2016-12-02 14:17:36.887] [[32mDispatcher[0m] [36mName:[0m graficos.vista1
+I [2016-12-02 14:17:36.887] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:17:36.887] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::5e3a7949bad0080498a9>
+I [2016-12-02 14:17:36.922] [[32mDispatcher[0m] Event graficos.vista1 Finished in 0.034800349 seconds
+I [2016-12-02 14:17:36.924] [[32mConnectionManager[0m] Connection opened: #<Connection::ecbdf8bc7c3464386940>
+I [2016-12-02 14:17:36.924] [[32mDispatcher[0m] Started Event: graficos.datos1
+I [2016-12-02 14:17:36.924] [[32mDispatcher[0m] [36mName:[0m graficos.datos1
+I [2016-12-02 14:17:36.924] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::d6a18ab13f209b9ac619>
+I [2016-12-02 14:17:36.957] [[32mDispatcher[0m] Event graficos.datos1 Finished in 0.032873793 seconds
+I [2016-12-02 14:17:36.969] [[32mDispatcher[0m] Started Event: graficos.semaforo
+I [2016-12-02 14:17:36.969] [[32mDispatcher[0m] [36mName:[0m graficos.semaforo
+I [2016-12-02 14:17:36.969] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::ecbdf8bc7c3464386940>
+I [2016-12-02 14:17:36.970] [[32mDispatcher[0m] Event graficos.semaforo Finished in 0.000690663 seconds
+I [2016-12-02 14:19:06.866] [[32mConnectionManager[0m] Connection closed: #<Connection::16e9878b419a2a066012>
+I [2016-12-02 14:19:06.866] [[32mConnectionManager[0m] Connection closed: #<Connection::d6a18ab13f209b9ac619>
+I [2016-12-02 14:19:06.867] [[32mConnectionManager[0m] Connection closed: #<Connection::ecbdf8bc7c3464386940>
+I [2016-12-02 14:19:06.868] [[32mConnectionManager[0m] Connection closed: #<Connection::5e3a7949bad0080498a9>
+I [2016-12-02 14:19:57.582] [[32mConnectionManager[0m] Connection opened: #<Connection::d013df02fa67b45d2d0a>
+I [2016-12-02 14:19:57.648] [[32mConnectionManager[0m] Connection opened: #<Connection::49d2cec195ebf74b79bf>
+I [2016-12-02 14:19:57.655] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-12-02 14:19:57.655] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-12-02 14:19:57.655] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:19:57.655] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::d013df02fa67b45d2d0a>
+I [2016-12-02 14:19:57.657] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.001466166 seconds
+I [2016-12-02 14:19:57.667] [[32mConnectionManager[0m] Connection opened: #<Connection::8d171eb96e04e4f10fd1>
+I [2016-12-02 14:19:57.669] [[32mDispatcher[0m] Started Event: graficos.vista1
+I [2016-12-02 14:19:57.669] [[32mDispatcher[0m] [36mName:[0m graficos.vista1
+I [2016-12-02 14:19:57.669] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:19:57.669] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::49d2cec195ebf74b79bf>
+I [2016-12-02 14:19:57.708] [[32mDispatcher[0m] Event graficos.vista1 Finished in 0.039406146 seconds
+I [2016-12-02 14:19:57.710] [[32mConnectionManager[0m] Connection opened: #<Connection::030e5f2cc299682acea9>
+I [2016-12-02 14:19:57.735] [[32mDispatcher[0m] Started Event: graficos.datos1
+I [2016-12-02 14:19:57.735] [[32mDispatcher[0m] [36mName:[0m graficos.datos1
+I [2016-12-02 14:19:57.735] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::8d171eb96e04e4f10fd1>
+I [2016-12-02 14:19:57.742] [[32mDispatcher[0m] Event graficos.datos1 Finished in 0.007096919 seconds
+I [2016-12-02 14:19:57.751] [[32mDispatcher[0m] Started Event: graficos.semaforo
+I [2016-12-02 14:19:57.751] [[32mDispatcher[0m] [36mName:[0m graficos.semaforo
+I [2016-12-02 14:19:57.751] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::030e5f2cc299682acea9>
+I [2016-12-02 14:19:57.752] [[32mDispatcher[0m] Event graficos.semaforo Finished in 0.000680591 seconds
+I [2016-12-02 14:20:01.712] [[32mConnectionManager[0m] Connection closed: #<Connection::d013df02fa67b45d2d0a>
+I [2016-12-02 14:20:01.719] [[32mConnectionManager[0m] Connection closed: #<Connection::49d2cec195ebf74b79bf>
+I [2016-12-02 14:20:01.727] [[32mConnectionManager[0m] Connection closed: #<Connection::8d171eb96e04e4f10fd1>
+I [2016-12-02 14:20:01.732] [[32mConnectionManager[0m] Connection closed: #<Connection::030e5f2cc299682acea9>
+I [2016-12-02 14:20:01.572] [[32mConnectionManager[0m] Connection opened: #<Connection::1290d33eaee9b73075bf>
+I [2016-12-02 14:20:01.592] [[32mConnectionManager[0m] Connection opened: #<Connection::a46445a04c036a4ae0aa>
+I [2016-12-02 14:20:01.601] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-12-02 14:20:01.601] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-12-02 14:20:01.601] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:01.601] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::1290d33eaee9b73075bf>
+I [2016-12-02 14:20:01.602] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.000925481 seconds
+I [2016-12-02 14:20:01.615] [[32mConnectionManager[0m] Connection opened: #<Connection::e02ba80e7d1e19aa7966>
+I [2016-12-02 14:20:01.622] [[32mDispatcher[0m] Started Event: graficos.vista2
+I [2016-12-02 14:20:01.622] [[32mDispatcher[0m] [36mName:[0m graficos.vista2
+I [2016-12-02 14:20:01.622] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:01.622] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::a46445a04c036a4ae0aa>
+I [2016-12-02 14:20:01.647] [[32mDispatcher[0m] Event graficos.vista2 Finished in 0.02521715 seconds
+I [2016-12-02 14:20:01.648] [[32mDispatcher[0m] Started Event: graficos.datos2
+I [2016-12-02 14:20:01.648] [[32mDispatcher[0m] [36mName:[0m graficos.datos2
+I [2016-12-02 14:20:01.648] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::e02ba80e7d1e19aa7966>
+I [2016-12-02 14:20:01.651] [[32mDispatcher[0m] Event graficos.datos2 Finished in 0.00344419 seconds
+I [2016-12-02 14:20:03.607] [[32mConnectionManager[0m] Connection closed: #<Connection::a46445a04c036a4ae0aa>
+I [2016-12-02 14:20:03.608] [[32mConnectionManager[0m] Connection closed: #<Connection::1290d33eaee9b73075bf>
+I [2016-12-02 14:20:03.608] [[32mConnectionManager[0m] Connection closed: #<Connection::e02ba80e7d1e19aa7966>
+I [2016-12-02 14:20:04.545] [[32mConnectionManager[0m] Connection opened: #<Connection::d4951ad6a90f3ff7b747>
+I [2016-12-02 14:20:04.756] [[32mConnectionManager[0m] Connection opened: #<Connection::01a01b95c02c57317ac6>
+I [2016-12-02 14:20:04.854] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-12-02 14:20:04.855] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-12-02 14:20:04.855] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:04.855] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::d4951ad6a90f3ff7b747>
+I [2016-12-02 14:20:04.871] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.001451359 seconds
+I [2016-12-02 14:20:04.970] [[32mConnectionManager[0m] Connection opened: #<Connection::0560a4c934bce8d4e000>
+I [2016-12-02 14:20:04.104] [[32mDispatcher[0m] Started Event: graficos.vista3
+I [2016-12-02 14:20:04.104] [[32mDispatcher[0m] [36mName:[0m graficos.vista3
+I [2016-12-02 14:20:04.104] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:04.104] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::01a01b95c02c57317ac6>
+I [2016-12-02 14:20:04.131] [[32mDispatcher[0m] Event graficos.vista3 Finished in 0.026812045 seconds
+I [2016-12-02 14:20:04.133] [[32mConnectionManager[0m] Connection opened: #<Connection::941e7bc47c5837567cfa>
+I [2016-12-02 14:20:04.133] [[32mDispatcher[0m] Started Event: graficos.datos3
+I [2016-12-02 14:20:04.133] [[32mDispatcher[0m] [36mName:[0m graficos.datos3
+I [2016-12-02 14:20:04.133] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::0560a4c934bce8d4e000>
+I [2016-12-02 14:20:04.137] [[32mDispatcher[0m] Event graficos.datos3 Finished in 0.00424539 seconds
+I [2016-12-02 14:20:04.159] [[32mDispatcher[0m] Started Event: graficos.semaforo
+I [2016-12-02 14:20:04.159] [[32mDispatcher[0m] [36mName:[0m graficos.semaforo
+I [2016-12-02 14:20:04.159] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::941e7bc47c5837567cfa>
+I [2016-12-02 14:20:04.160] [[32mDispatcher[0m] Event graficos.semaforo Finished in 0.000829354 seconds
+I [2016-12-02 14:20:19.938] [[32mConnectionManager[0m] Connection closed: #<Connection::0560a4c934bce8d4e000>
+I [2016-12-02 14:20:19.939] [[32mConnectionManager[0m] Connection closed: #<Connection::d4951ad6a90f3ff7b747>
+I [2016-12-02 14:20:19.939] [[32mConnectionManager[0m] Connection closed: #<Connection::01a01b95c02c57317ac6>
+I [2016-12-02 14:20:19.940] [[32mConnectionManager[0m] Connection closed: #<Connection::941e7bc47c5837567cfa>
+I [2016-12-02 14:20:20.400] [[32mConnectionManager[0m] Connection opened: #<Connection::84fb2eb4e5b85d710663>
+I [2016-12-02 14:20:20.421] [[32mConnectionManager[0m] Connection opened: #<Connection::d97f3877ab19380fabfd>
+I [2016-12-02 14:20:20.429] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-12-02 14:20:20.429] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-12-02 14:20:20.429] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:20.429] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::84fb2eb4e5b85d710663>
+I [2016-12-02 14:20:20.430] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.000920316 seconds
+I [2016-12-02 14:20:20.440] [[32mConnectionManager[0m] Connection opened: #<Connection::8932fbd831fc4a1c2dfd>
+I [2016-12-02 14:20:20.441] [[32mDispatcher[0m] Started Event: graficos.vista2
+I [2016-12-02 14:20:20.441] [[32mDispatcher[0m] [36mName:[0m graficos.vista2
+I [2016-12-02 14:20:20.441] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:20.441] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::d97f3877ab19380fabfd>
+I [2016-12-02 14:20:20.467] [[32mDispatcher[0m] Event graficos.vista2 Finished in 0.025882741 seconds
+I [2016-12-02 14:20:20.488] [[32mDispatcher[0m] Started Event: graficos.datos2
+I [2016-12-02 14:20:20.488] [[32mDispatcher[0m] [36mName:[0m graficos.datos2
+I [2016-12-02 14:20:20.488] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::8932fbd831fc4a1c2dfd>
+I [2016-12-02 14:20:20.493] [[32mDispatcher[0m] Event graficos.datos2 Finished in 0.004885253 seconds
+I [2016-12-02 14:20:24.386] [[32mConnectionManager[0m] Connection closed: #<Connection::8932fbd831fc4a1c2dfd>
+I [2016-12-02 14:20:24.387] [[32mConnectionManager[0m] Connection closed: #<Connection::84fb2eb4e5b85d710663>
+I [2016-12-02 14:20:24.388] [[32mConnectionManager[0m] Connection closed: #<Connection::d97f3877ab19380fabfd>
+I [2016-12-02 14:20:24.812] [[32mConnectionManager[0m] Connection opened: #<Connection::dbe45d413704bef803b6>
+I [2016-12-02 14:20:24.829] [[32mConnectionManager[0m] Connection opened: #<Connection::e2fc8c7315b0705f79ea>
+I [2016-12-02 14:20:24.836] [[32mDispatcher[0m] Started Event: graficos.tiempovista
+I [2016-12-02 14:20:24.836] [[32mDispatcher[0m] [36mName:[0m graficos.tiempovista
+I [2016-12-02 14:20:24.836] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:24.836] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::dbe45d413704bef803b6>
+I [2016-12-02 14:20:24.838] [[32mDispatcher[0m] Event graficos.tiempovista Finished in 0.001067954 seconds
+I [2016-12-02 14:20:24.847] [[32mConnectionManager[0m] Connection opened: #<Connection::a682e341f24c34bfdcec>
+I [2016-12-02 14:20:24.854] [[32mDispatcher[0m] Started Event: graficos.vista1
+I [2016-12-02 14:20:24.854] [[32mDispatcher[0m] [36mName:[0m graficos.vista1
+I [2016-12-02 14:20:24.854] [[32mDispatcher[0m] [36mData:[0m ""
+I [2016-12-02 14:20:24.854] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::e2fc8c7315b0705f79ea>
+I [2016-12-02 14:20:24.864] [[32mDispatcher[0m] Event graficos.vista1 Finished in 0.010320622 seconds
+I [2016-12-02 14:20:24.866] [[32mConnectionManager[0m] Connection opened: #<Connection::8ff160d4f876ca38ced2>
+I [2016-12-02 14:20:24.872] [[32mDispatcher[0m] Started Event: graficos.datos1
+I [2016-12-02 14:20:24.872] [[32mDispatcher[0m] [36mName:[0m graficos.datos1
+I [2016-12-02 14:20:24.872] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::a682e341f24c34bfdcec>
+I [2016-12-02 14:20:24.876] [[32mDispatcher[0m] Event graficos.datos1 Finished in 0.004034289 seconds
+I [2016-12-02 14:20:24.896] [[32mDispatcher[0m] Started Event: graficos.semaforo
+I [2016-12-02 14:20:24.896] [[32mDispatcher[0m] [36mName:[0m graficos.semaforo
+I [2016-12-02 14:20:24.896] [[32mDispatcher[0m] [36mConnection:[0m #<Connection::8ff160d4f876ca38ced2>
+I [2016-12-02 14:20:24.897] [[32mDispatcher[0m] Event graficos.semaforo Finished in 0.000659203 seconds
+I [2016-12-02 14:20:49.525] [[32mConnectionManager[0m] Connection closed: #<Connection::dbe45d413704bef803b6>
+I [2016-12-02 14:20:49.526] [[32mConnectionManager[0m] Connection closed: #<Connection::e2fc8c7315b0705f79ea>
+I [2016-12-02 14:20:49.527] [[32mConnectionManager[0m] Connection closed: #<Connection::a682e341f24c34bfdcec>
+I [2016-12-02 14:20:49.528] [[32mConnectionManager[0m] Connection closed: #<Connection::8ff160d4f876ca38ced2>
